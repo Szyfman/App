@@ -1,0 +1,38 @@
+/* ═══════════ COMPONENTES REUTILIZÁVEIS ═══════════ */
+
+/* Botões */
+.btn {
+  display: inline-block;
+  font-family: var(--fonte-body);
+  font-size: .78rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: .7rem 1.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--trans);
+  border: 1px solid;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--cor-primaria);
+  color: white;
+  border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+  background: var(--cor-texto);
+  border-color: var(--cor-texto);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.btn-outline:hover {
+  background: var(--cor-primaria);
+  color: white;
+}

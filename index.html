@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carina & Daniel — 06.09.2026</title>
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS Modular (ordem importa!) -->
+<link rel="stylesheet" href="css/1-variables.css">
+<link rel="stylesheet" href="css/2-base.css">
+<link rel="stylesheet" href="css/3-typography.css">
+<link rel="stylesheet" href="css/4-navigation.css">
+<link rel="stylesheet" href="css/5-hero.css">
+<link rel="stylesheet" href="css/6-sections.css">
+<link rel="stylesheet" href="css/7-ceremony.css">
+<link rel="stylesheet" href="css/8-timeline.css">
+<link rel="stylesheet" href="css/9-tabs.css">
+<link rel="stylesheet" href="css/10-cards.css">
+<link rel="stylesheet" href="css/11-gifts.css">
+<link rel="stylesheet" href="css/12-forms.css">
+<link rel="stylesheet" href="css/13-footer.css">
+<link rel="stylesheet" href="css/14-components.css">
+<link rel="stylesheet" href="css/15-modals.css">
+<link rel="stylesheet" href="css/16-responsive.css">
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <span class="nav-logo" id="nav-logo">C & D</span>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#cerimonia">Cerimônia</a></li>
+      <li><a href="#historia">Nossa História</a></li>
+      <li><a href="#dicas">Dicas</a></li>
+      <li><a href="#presentes">Presentes</a></li>
+      <li><a href="#interacao">RSVP</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#cerimonia" onclick="closeMobile()">Cerimônia & Recepção</a>
+    <a href="#historia" onclick="closeMobile()">Nossa História</a>
+    <a href="#dicas" onclick="closeMobile()">Dicas</a>
+    <a href="#presentes" onclick="closeMobile()">Lista de Presentes</a>
+    <a href="#interacao" onclick="closeMobile()">RSVP & Recados</a>
+  </div>
+</nav>
+
+<!-- ═══════════ HOME ═══════════ -->
+<section id="home">
+  <div class="hero-content">
+    <span class="hero-pre">Convidamos você para celebrar</span>
+    <div class="hero-names display">
+      <em id="nome1">Carina</em> & <em id="nome2">Daniel</em>
+    </div>
+    <div class="hero-date" id="hero-date">6 de setembro de 2026</div>
+    <p class="hero-frase" id="hero-frase">"Estamos muito felizes em compartilhar este momento especial com vocês."</p>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-dias">000</span>
+        <span class="countdown-label">Dias</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-horas">00</span>
+        <span class="countdown-label">Horas</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-min">00</span>
+        <span class="countdown-label">Min</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-item">
+        <span class="countdown-num" id="cd-sec">00</span>
+        <span class="countdown-label">Seg</span>
+      </div>
+    </div>
+
+    <a href="#interacao" class="btn btn-primary">Confirmar Presença</a>
+  </div>
+</section>
+
+<!-- ═══════════ CERIMÔNIA & RECEPÇÃO ═══════════ -->
+<section id="cerimonia">
+  <div class="section-inner">
+    <span class="section-sub">O Grande Dia</span>
+    <h2 class="section-title">Cerimônia &amp; Recepção</h2>
+    <div class="divider"></div>
+
+    <div class="ceremony-grid">
+      <!-- Cerimônia -->
+      <div class="ceremony-card">
+        <h3><i class="fa-regular fa-church" style="color:var(--cor-secundaria);margin-right:.5rem;font-size:1.1rem"></i> Cerimônia</h3>
+        <div class="ceremony-detail"><i class="fa-regular fa-calendar"></i><span id="cer-data">6 de setembro de 2026</span></div>
+        <div class="ceremony-detail"><i class="fa-regular fa-clock"></i><span id="cer-hora">14h30</span></div>
+        <div class="ceremony-detail"><i class="fa-solid fa-location-dot"></i><div><strong id="cer-local">Mansão Carioca</strong><br><span id="cer-end" style="font-size:.85rem;color:rgba(44,31,20,.6)">Estr. das Furnas, 572 - Alto da Boa Vista, RJ</span></div></div>
+        <div class="info-box" id="cer-info">
+          A cerimônia seguirá a tradição judaica. Pedimos que os convidados cheguem com 15 minutos de antecedência.
+        </div>
+        <a href="https://www.google.com/maps/place/Mans%C3%A3o+Carioca/@-22.9684358,-43.284201,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd6f77ca69be7:0x2d8d1917fcd29607!8m2!3d-22.9684359!4d-43.2793301!16s%2Fg%2F1tt0sbt4?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline" style="margin-top:1rem;font-size:.75rem">
+          <i class="fa-solid fa-map-location-dot"></i> Ver no mapa
+        </a>
+      </div>
+
+      <!-- Recepção -->
+      <div class="ceremony-card">
+        <h3><i class="fa-solid fa-champagne-glasses" style="color:var(--cor-secundaria);margin-right:.5rem;font-size:1.1rem"></i> Recepção</h3>
+        <div class="ceremony-detail"><i class="fa-regular fa-calendar"></i><span id="rec-data">6 de setembro de 2026</span></div>
+        <div class="ceremony-detail"><i class="fa-regular fa-clock"></i><span id="rec-hora">19h30</span></div>
+        <div class="ceremony-detail"><i class="fa-solid fa-location-dot"></i><div><strong id="rec-local">Espaço Villa Jardim</strong><br><span id="rec-end" style="font-size:.85rem;color:rgba(44,31,20,.6)">Estrada da Gávea, 728 — São Conrado, RJ</span></div></div>
+        <div class="info-box" id="rec-info">
+          Jantar completo com open bar. Buffet com estações ao vivo de massas e risotos. Bolo de casamento às 22h.
+        </div>
+        <a href="https://www.google.com/maps/place/Mans%C3%A3o+Carioca/@-22.9684358,-43.284201,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd6f77ca69be7:0x2d8d1917fcd29607!8m2!3d-22.9684359!4d-43.2793301!16s%2Fg%2F1tt0sbt4?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline" style="margin-top:1rem;font-size:.75rem">
+          <i class="fa-solid fa-map-location-dot"></i> Ver no mapa
+        </a>
+      </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="map-wrap">
+      <iframe id="mapa"
+        src="https://maps.google.com/maps?q=-22.9684359,-43.2793301&z=14&output=embed"
+        allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Dress code -->
+    <div class="dresscode-card">
+      <div class="dresscode-icon"><i class="fa-solid fa-vest"></i></div>
+      <div>
+        <div class="dresscode-label"><i class="fa-solid fa-shirt"></i> Dress Code</div>
+        <div class="dresscode-title" id="dc-title">Passeio Completo</div>
+        <div class="dresscode-desc" id="dc-desc">Traje longo ou midi para convidadas. Terno completo ou blazer para os cavalheiros.</div>
+        <div class="palette" style="margin-top:1rem;">
+          <div class="palette-dot" style="background:#D4B896" data-name="Champagne" title="Champagne"></div>
+          <div class="palette-dot" style="background:#8B6F5E" data-name="Terracota" title="Terracota"></div>
+          <div class="palette-dot" style="background:#C5A98C" data-name="Nude" title="Nude"></div>
+          <div class="palette-dot" style="background:#E8E0D5" data-name="Off-white" title="Off-white"></div>
+          <div class="palette-dot" style="background:#5C4033" data-name="Marrom" title="Marrom"></div>
+        </div>
+        <p style="font-size:.7rem;color:rgba(44,31,20,.4);margin-top:1.2rem;">
+          <i class="fa-solid fa-circle-info"></i> Evitar branco, creme puro ou preto total. Saltos no jardim: prefira plataformas ou salto bloco.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NOSSA HISTÓRIA ═══════════ -->
+<section id="historia">
+  <div class="section-inner">
+    <span class="section-sub">Nós dois</span>
+    <h2 class="section-title">Nossa História</h2>
+    <div class="divider"></div>
+
+    <div class="timeline">
+
+      <!-- Capítulo 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-tag">Março de 2019</div>
+          <div class="timeline-chapter">O Algoritmo</div>
+          <p class="timeline-text">
+            Tudo começou com um match improvável em um aplicativo às 23h de uma quarta-feira qualquer. Uma mensagem, um emoji, e uma troca de números que mudaria tudo. Nenhum dos dois esperava que aquele bate-papo virasse a história mais bonita das nossas vidas.
+          </p>
+          <div class="photo-placeholder">📸 Foto do Encontro</div>
+        </div>
+      </div>
+
+      <!-- Capítulo 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-tag">Dezembro de 2020</div>
+          <div class="timeline-chapter">A Ponte Aérea</div>
+          <p class="timeline-text">
+            Com ele em São Paulo e ela no Rio, os fins de semana viraram aventuras. Bagagem de mão, aeroporto, surpresas no portão de embarque. A distância nunca pareceu tão curta.
+          </p>
+          <div class="photo-placeholder">📸 Foto da Viagem</div>
+        </div>
+      </div>
+
+      <!-- Capítulo 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-tag">Junho de 2022</div>
+          <div class="timeline-chapter">O Mesmo Teto</div>
+          <p class="timeline-text">
+            Depois de 3 anos de viagens e saudades, decidimos que estava na hora de dividir o café da manhã todos os dias. A mudança para o Rio foi com duas malas e muita coragem — e foi a melhor decisão de nossas vidas.
+          </p>
+          <div class="photo-placeholder">📸 Foto do Apartamento</div>
+        </div>
+      </div>
+
+      <!-- Capítulo 4 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-tag">Fevereiro de 2024</div>
+          <div class="timeline-chapter">O Pedido</div>
+          <p class="timeline-text">
+            Em uma tarde no Jardim Botânico, entre flores e pombos curiosos, Pedro ajoelhou com um anel que guardava há meses. Ana disse sim antes que ele terminasse a pergunta. 💍
+          </p>
+          <div class="photo-placeholder">📸 Foto do Pedido</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ DICAS ═══════════ -->
+<section id="dicas">
+  <div class="section-inner">
+    <span class="section-sub">Tudo que você precisa saber</span>
+    <h2 class="section-title">Dicas &amp; Logística</h2>
+    <div class="divider"></div>
+
+    <div class="dicas-tabs">
+      <button class="tab-btn active" onclick="showTab('hospedagem', this)"><i class="fa-solid fa-hotel"></i> Hospedagem</button>
+      <button class="tab-btn" onclick="showTab('beleza', this)"><i class="fa-solid fa-scissors"></i> Beleza</button>
+      <button class="tab-btn" onclick="showTab('turismo', this)"><i class="fa-solid fa-map-location-dot"></i> Passeios</button>
+    </div>
+
+    <!-- Hospedagem -->
+    <div class="tab-content active" id="tab-hospedagem">
+      <p style="text-align:center;color:rgba(44,31,20,.6);font-size:.9rem;margin-bottom:2rem">
+        <i class="fa-solid fa-circle-info" style="color:var(--cor-secundaria)"></i>
+        Negociamos descontos exclusivos! Informe o código ao reservar.
+      </p>
+      <div class="hotel-grid">
+
+        <div class="hotel-card">
+          <div><div class="hotel-stars">★★★★★</div></div>
+          <div class="hotel-name">Hotel Santa Teresa</div>
+          <span class="hotel-tag">5 km do local</span>
+          <div class="hotel-detail"><i class="fa-solid fa-tag" style="color:var(--cor-secundaria)"></i> Desconto exclusivo de 20% para convidados</div>
+          <div class="hotel-discount">Código: <strong>ANAPEDRO25</strong></div>
+          <div class="hotel-detail">Válido: 10–14 de julho de 2025</div>
+          <a href="#" class="btn btn-primary" style="font-size:.75rem">Reservar →</a>
+        </div>
+
+        <div class="hotel-card">
+          <div><div class="hotel-stars">★★★★</div></div>
+          <div class="hotel-name">Windsor Barra</div>
+          <span class="hotel-tag">8 km do local</span>
+          <div class="hotel-detail"><i class="fa-solid fa-tag" style="color:var(--cor-secundaria)"></i> 15% de desconto + café incluso</div>
+          <div class="hotel-discount">Código: <strong>WEDDING2025</strong></div>
+          <div class="hotel-detail">Válido: 11–13 de julho de 2025</div>
+          <a href="#" class="btn btn-primary" style="font-size:.75rem">Reservar →</a>
+        </div>
+
+        <div class="hotel-card">
+          <div><div class="hotel-stars">★★★</div></div>
+          <div class="hotel-name">Ibis Rio Barra</div>
+          <span class="hotel-tag">Econômico · 10 km</span>
+          <div class="hotel-detail"><i class="fa-solid fa-tag" style="color:var(--cor-secundaria)"></i> Melhor custo-benefício da região</div>
+          <div class="hotel-discount">Código: <strong>IBISANAPED</strong></div>
+          <div class="hotel-detail">Válido: 11–13 de julho de 2025</div>
+          <a href="#" class="btn btn-primary" style="font-size:.75rem">Reservar →</a>
+        </div>
+
+        <div class="hotel-card" style="background:rgba(197,169,140,.08);border:1px dashed var(--cor-secundaria)">
+          <div style="font-size:1.8rem;color:var(--cor-secundaria)"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="hotel-name" style="font-size:1rem">Dica de Comparação</div>
+          <div class="hotel-detail">Compare preços no <strong>Booking.com</strong> e <strong>Hoteis.com</strong>. Reserve com antecedência — julho é alta temporada no Rio!</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Beleza -->
+    <div class="tab-content" id="tab-beleza">
+      <p style="text-align:center;color:rgba(44,31,20,.6);font-size:.9rem;margin-bottom:2rem">
+        <i class="fa-solid fa-circle-info" style="color:var(--cor-secundaria)"></i>
+        Profissionais indicados por nós. Reserve com antecedência!
+      </p>
+      <div class="beauty-list">
+
+        <div class="beauty-card">
+          <div class="beauty-icon"><i class="fa-solid fa-scissors"></i></div>
+          <div>
+            <div class="beauty-name">Juliana Ramos</div>
+            <div class="beauty-spec">Cabelos · Penteados para festas</div>
+            <div class="beauty-phone"><i class="fa-brands fa-whatsapp"></i> (21) 99999-0001</div>
+          </div>
+        </div>
+
+        <div class="beauty-card">
+          <div class="beauty-icon"><i class="fa-solid fa-brush"></i></div>
+          <div>
+            <div class="beauty-name">Carol Makeup</div>
+            <div class="beauty-spec">Maquiagem · Airbrush e clássica</div>
+            <div class="beauty-phone"><i class="fa-brands fa-whatsapp"></i> (21) 99999-0002</div>
+          </div>
+        </div>
+
+        <div class="beauty-card">
+          <div class="beauty-icon"><i class="fa-solid fa-spa"></i></div>
+          <div>
+            <div class="beauty-name">Salão Bella Vista</div>
+            <div class="beauty-spec">Completo · Unhas, cabelo e make</div>
+            <div class="beauty-phone"><i class="fa-brands fa-whatsapp"></i> (21) 99999-0003</div>
+          </div>
+        </div>
+
+        <div class="beauty-card">
+          <div class="beauty-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <div>
+            <div class="beauty-name">Nails by Paty</div>
+            <div class="beauty-spec">Unhas · Gel, acrílico e nail art</div>
+            <div class="beauty-phone"><i class="fa-brands fa-whatsapp"></i> (21) 99999-0004</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Turismo -->
+    <div class="tab-content" id="tab-turismo">
+      <p style="text-align:center;color:rgba(44,31,20,.6);font-size:.9rem;margin-bottom:2rem">
+        Aproveite a estadia no Rio! Curadoria especial dos nossos lugares favoritos.
+      </p>
+
+      <div style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cor-secundaria);margin-bottom:1rem">
+        <i class="fa-solid fa-leaf"></i> Parques & Natureza
+      </div>
+      <div class="turismo-grid" style="margin-bottom:2.5rem">
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-tree"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Parques</div>
+            <div class="turismo-name">Jardim Botânico</div>
+            <div class="turismo-desc">Lar de orquídeas raras e vitórias-régias gigantes. Entrada gratuita às quartas. Indispensável!</div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-mountain-sun"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Natureza</div>
+            <div class="turismo-name">Trilha do Corcovado</div>
+            <div class="turismo-desc">Vista privilegiada da cidade maravilhosa. Reserve o trem com antecedência.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cor-secundaria);margin-bottom:1rem">
+        <i class="fa-solid fa-landmark"></i> Cultura & Arte
+      </div>
+      <div class="turismo-grid" style="margin-bottom:2.5rem">
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-palette"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Cultura</div>
+            <div class="turismo-name">CCBB Rio</div>
+            <div class="turismo-desc">Centro Cultural Banco do Brasil com exposições sempre incríveis e entrada gratuita.</div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-masks-theater"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Arte</div>
+            <div class="turismo-name">Museu do Amanhã</div>
+            <div class="turismo-desc">Arquitetura deslumbrante na Praça Mauá. Exposições interativas sobre o futuro.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cor-secundaria);margin-bottom:1rem">
+        <i class="fa-solid fa-utensils"></i> Gastronomia
+      </div>
+      <div class="turismo-grid">
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-fish"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Gastronomia</div>
+            <div class="turismo-name">Zuka — Leblon</div>
+            <div class="turismo-desc">Melhor salmão do Rio. Ambiente charmoso e contemporâneo. Reserve com antecedência.</div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img"><i class="fa-solid fa-burger"></i></div>
+          <div class="turismo-body">
+            <div class="turismo-cat">Gastronomia</div>
+            <div class="turismo-name">Bar do Mineiro</div>
+            <div class="turismo-desc">Feijoada clássica em Santa Teresa. Autêntico, popular e imperdível.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ PRESENTES ═══════════ -->
+<section id="presentes">
+  <div class="section-inner">
+    <span class="section-sub">Com carinho</span>
+    <h2 class="section-title">Lista de Presentes</h2>
+    <div class="divider"></div>
+
+    <div class="gift-bar">
+      <div>
+        <div class="gift-total">Total selecionado: R$ <span id="cart-total">0,00</span></div>
+        <div style="font-size:.78rem;color:rgba(44,31,20,.5)"><span id="cart-count">0</span> item(ns) no carrinho</div>
+      </div>
+      <button class="btn btn-primary" onclick="openCart()" id="cart-btn" style="display:none">
+        <i class="fa-solid fa-basket-shopping"></i> Ver carrinho
+      </button>
+    </div>
+
+    <div class="gift-grid" id="gift-grid">
+      <!-- Preenchido pelo JS -->
+    </div>
+
+    <!-- Pix direto -->
+    <div style="text-align:center;margin-top:3rem">
+      <p style="font-size:.85rem;color:rgba(44,31,20,.5);margin-bottom:1rem">Prefere presentear com um valor livre?</p>
+      <button class="btn btn-outline" onclick="copyPix()">
+        <i class="fa-brands fa-pix"></i> Enviar Pix Livre
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Carrinho -->
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-box">
+    <h3>🛒 Carrinho de Presentes</h3>
+    <div id="cart-items"></div>
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span>R$ <span id="modal-total">0,00</span></span>
+    </div>
+    <div class="pix-box">
+      <div class="pix-label"><i class="fa-brands fa-pix"></i> Chave Pix para pagamento</div>
+      <div class="pix-key" id="pix-key-display">casamento@anapedro.com.br</div>
+      <button class="pix-copy" onclick="copyPix()">
+        <i class="fa-regular fa-copy"></i> Copiar chave
+      </button>
+    </div>
+    <div style="display:flex;gap:.8rem;margin-top:1.5rem;flex-wrap:wrap">
+      <button class="btn btn-outline" onclick="closeCart()" style="flex:1">Continuar comprando</button>
+      <button class="btn btn-primary" onclick="finalizarPresente()" style="flex:1">Finalizar <i class="fa-solid fa-check"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ RSVP & RECADOS ═══════════ -->
+<section id="interacao">
+  <div class="section-inner">
+    <span class="section-sub">Sua presença importa</span>
+    <h2 class="section-title">RSVP &amp; Recados</h2>
+    <div class="divider"></div>
+
+    <div class="interacao-grid">
+
+      <!-- RSVP -->
+      <div>
+        <div class="form-title">Confirmar Presença</div>
+
+        <div class="form-group">
+          <label>Nome completo</label>
+          <input type="text" id="rsvp-nome" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" id="rsvp-email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label>Confirmação</label>
+          <select id="rsvp-conf">
+            <option value="">Selecione…</option>
+            <option value="sim">✅ Sim, estarei presente!</option>
+            <option value="talvez">🤞 Talvez, aguardem confirmação</option>
+            <option value="nao">❌ Não poderei comparecer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Acompanhantes (quantos?)</label>
+          <select id="rsvp-acomp">
+            <option value="0">Apenas eu</option>
+            <option value="1">+ 1 acompanhante</option>
+            <option value="2">+ 2 acompanhantes</option>
+            <option value="3">+ 3 acompanhantes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Restrições alimentares</label>
+          <input type="text" id="rsvp-rest" placeholder="Vegetariano, alergia a amendoim…">
+        </div>
+        <button class="btn btn-primary" onclick="submitRsvp()" style="width:100%">
+          Confirmar Presença <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+
+      <!-- Recados -->
+      <div>
+        <div class="form-title">Mural de Recados</div>
+
+        <div class="form-group">
+          <label>Seu nome</label>
+          <input type="text" id="msg-nome" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label>E-mail (não será exibido)</label>
+          <input type="email" id="msg-email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label>Sua mensagem</label>
+          <textarea id="msg-texto" rows="4" placeholder="Escreva um recado especial para os noivos…"></textarea>
+        </div>
+        <button class="btn btn-outline" onclick="submitMsg()" style="width:100%">
+          Enviar Recado <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <!-- Mural público -->
+        <div class="mural-list" id="mural-list">
+          <div class="mural-item">
+            <div class="mural-name">Maria Fernanda</div>
+            <div class="mural-msg">"Que Deus abençoe cada momento dessa nova fase! Vocês foram feitos um para o outro. 💕"</div>
+            <div class="mural-date">2 de julho de 2025</div>
+          </div>
+          <div class="mural-item">
+            <div class="mural-name">Ricardo &amp; Camila</div>
+            <div class="mural-msg">"Uma história linda que tivemos o privilégio de acompanhar desde o começo. Que venham muitos capítulos!"</div>
+            <div class="mural-date">28 de junho de 2025</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RODAPÉ ═══════════ -->
+<footer>
+  <div class="footer-names" id="footer-names">Carina &amp; Daniel</div>
+  <div class="footer-hash" id="footer-hash">#CarinaDaniel2026</div>
+  <div class="footer-links">
+    <a href="#" onclick="showTermos()">Termos de Uso</a>
+    <a href="#" onclick="showPriv()">Privacidade</a>
+    <a href="#">Contato</a>
+  </div>
+  <div class="footer-tiny">Site criado com amor · © 2026 Carina &amp; Daniel</div>
+</footer>
+
+<!-- Cookies Banner -->
+<div class="cookie-banner hidden" id="cookie-banner">
+  <span>🍪 Usamos cookies para salvar suas preferências e melhorar sua experiência neste site.</span>
+  <div class="cookie-btns">
+    <button class="cookie-btn cookie-info" onclick="showPriv()">Saiba mais</button>
+    <button class="cookie-btn cookie-ok" onclick="acceptCookies()">Aceitar</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- JavaScript Modular (ordem importa!) -->
+<script src="config.js"></script>
+<script src="js/data-gifts.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

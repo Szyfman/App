@@ -1,0 +1,53 @@
+/* ═══════════ RESPONSIVE ═══════════ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .ceremony-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dresscode-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 0 0 0 50px;
+    width: auto;
+  }
+
+  .interacao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown {
+    gap: .8rem;
+  }
+
+  .countdown-num {
+    font-size: 2rem;
+  }
+
+  .countdown-sep {
+    font-size: 1.6rem;
+  }
+}

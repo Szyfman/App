@@ -1,0 +1,36 @@
+/* ═══════════ TIPOGRAFIA ═══════════ */
+.display {
+  font-family: var(--fonte-display);
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-display);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2.section-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--cor-primaria);
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
+.section-sub {
+  font-family: var(--fonte-body);
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--cor-secundaria);
+  text-align: center;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--cor-secundaria);
+  margin: 1rem auto 2rem;
+}

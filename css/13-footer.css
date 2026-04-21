@@ -1,0 +1,45 @@
+/* ═══════════ RODAPÉ ═══════════ */
+footer {
+  background: var(--cor-texto);
+  color: rgba(250,247,244,.7);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.footer-names {
+  font-family: var(--fonte-display);
+  font-size: 2.2rem;
+  color: rgba(212,184,150,.9);
+  margin-bottom: .5rem;
+}
+
+.footer-hash {
+  font-size: .8rem;
+  letter-spacing: .2em;
+  opacity: .5;
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  opacity: .5;
+  transition: opacity var(--trans);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-tiny {
+  font-size: .75rem;
+  opacity: .4;
+}
